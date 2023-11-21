@@ -1,14 +1,16 @@
+
+console.log('fds')
 $(document).ready(() => {
 	
     $('#documentacao').on('click', () => {
 
         // METODO LOAD
-        //$("#pagina").load('documentacao.html')
+        $("#pagina").load('documentacao.html')
 
         // METODO GET
-        $.get('documentacao.html', data => {
-            $('#pagina').html(data)
-        })
+        // $.get('documentacao.html', data => {
+        //     $('#pagina').html(data)
+        // })
 
         // METODO POST
         // $.post('documentacao.html', data => {
@@ -27,7 +29,7 @@ $(document).ready(() => {
     $('#competencia').on('change', e => {
         // console.log($(e.target).val())
 
-        let competencia = $(e.target).val()
+        let competencia = $(e.target).val();
         // console.log(competencia)
 
         $.ajax({
@@ -45,4 +47,4 @@ $(document).ready(() => {
 
 
 
-})
+});
